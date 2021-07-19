@@ -29,6 +29,9 @@ function App() {
 
     useEffect( () => {
         $.ajax( {
+            headers: {
+                'Content-Type':'application/json',
+            },
             method: 'GET',
             url: 'https://jteststage.wpengine.com/wp-json/wp/v2/products'
         } )
