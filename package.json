@@ -1,0 +1,40 @@
+{
+  "name": "80twentyweb",
+  "version": "1.0.0",
+  "description": "A utility script for 80TwentyWeb",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "NODE_ENV=production gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Den Isahac <den.isahac@gmail.com>",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.14.5",
+    "autoprefixer": "^9.5.0",
+    "babel-loader": "^8.0.5",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0-beta.2",
+    "gulp-copy": "^4.0.1",
+    "gulp-eslint": "^5.0.0",
+    "gulp-image": "^4.4.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "redux": "^4.1.0"
+  }
+}
