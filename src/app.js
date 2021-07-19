@@ -12,7 +12,8 @@ function Media( props ) {
     useEffect( () => {
         $.ajax( {
             method: 'GET',
-            url: 'https://jteststage.wpengine.com/wp-json/wp/v2/media/' + props.media
+            url: 'https://jteststage.wpengine.com/wp-json/wp/v2/media/' + props.media,
+            dataType: 'jsonp'
         } )
         .done( data => {
             setUrl( data.source_url );
@@ -29,11 +30,9 @@ function App() {
 
     useEffect( () => {
         $.ajax( {
-            headers: {
-                'Content-Type':'application/json',
-            },
             method: 'GET',
-            url: 'https://jteststage.wpengine.com/wp-json/wp/v2/products'
+            url: 'https://jteststage.wpengine.com/wp-json/wp/v2/products',
+            dataType: 'jsonp'
         } )
         .done( data => {
             setProducts( data );
