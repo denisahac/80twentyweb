@@ -13,7 +13,6 @@ function Media( props ) {
         $.ajax( {
             method: 'GET',
             url: 'https://jteststage.wpengine.com/wp-json/wp/v2/media/' + props.media,
-            dataType: 'jsonp'
         } )
         .done( data => {
             setUrl( data.source_url );
@@ -32,7 +31,6 @@ function App() {
         $.ajax( {
             method: 'GET',
             url: 'https://jteststage.wpengine.com/wp-json/wp/v2/products',
-            dataType: 'jsonp'
         } )
         .done( data => {
             setProducts( data );
