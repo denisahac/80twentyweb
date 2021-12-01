@@ -34,6 +34,7 @@ const useStyles = createUseStyles( {
         left: 0,
         bottom: 0,
         right: 0,
+        zIndex: 999,
         padding: 20,
         backgroundColor: '#fff',
     },
