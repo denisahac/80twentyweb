@@ -14,18 +14,48 @@ const useStyles = createUseStyles( {
         display: 'flex',
         flexWrap: 'wrap',
     },
+
     column: {
-        flex: '0 0 25%'
+        display: 'flex',
+        flex: '0 0 25%',
+        width: '25%'
     },
+
     product: {
+        margin: 12,
         padding: 20,
-        marginBottom: '1rem',
-        cursor: 'pointer'
+        borderRadius: 12,
+        cursor: 'pointer',
+        background: '#f9f9f9',
+        transition: 'background 0.3s ease-in-out',
+
+        '&:hover': {
+            background: '#efefef'
+        }
     },
 
     'product__image': {
+        display: 'block',
         maxWidth: '100%',
-        height: 200,
+        maxHeight: 200,
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginBottom: 12
+    },
+
+    'product__title' : {
+        marginBottom: 12,
+        fontSize: 24,
+        fontWeight: 900,
+        color: '#1E2061',
+        textAlign: 'center',
+        lineHeight: 1.2
+    },
+
+    'product__subtitle': {
+        marginTop: 0,
+        fontWeight: 700,
+        textAlign: 'center'
     },
 
     'product__details': {
