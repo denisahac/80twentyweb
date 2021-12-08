@@ -45,7 +45,7 @@ const useStyles = createUseStyles( {
 
     'product__title' : {
         marginBottom: 12,
-        fontSize: 24,
+        fontSize: '24px !important',
         fontWeight: 900,
         color: '#1E2061',
         textAlign: 'center',
