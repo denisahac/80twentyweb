@@ -38,7 +38,6 @@ const styles = createUseStyles( {
     },
 
     'feature': {
-        marginBottom: 20
     }
 } );
 
