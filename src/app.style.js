@@ -66,6 +66,7 @@ const useStyles = createUseStyles( {
         right: 0,
         zIndex: 999,
         padding: 20,
+        overflow: 'auto',
         backgroundColor: '#fff',
     },
 
@@ -76,7 +77,21 @@ const useStyles = createUseStyles( {
     },
 
     'product__details__inner': {
-        padding: 20
+        display: 'flex',
+        flexWrap: 'wrap',
+        padding: 20,
+
+        '& div': {
+           flex: '0 0 50%',
+           width: '50%',
+           padding: 20,
+           boxSizing: 'border-box'
+        },
+
+        '& $product__image': {
+            marginLeft: 0,
+            maxHeight: 320
+        }
     }
 } );
 

@@ -38,6 +38,17 @@ const styles = createUseStyles( {
     },
 
     'feature': {
+    },
+
+    'product__description': {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-end',
+        textAlign: 'right',
+    },
+
+    'product__media': {
+        
     }
 } );
 
@@ -77,12 +88,16 @@ function Popup( props ) {
                 <div className={ classes.clearfix }></div>
 
                 <div className={ classes.product__details__inner }>
+                    <div className={ cl.product__description }>
+                        <h2 className={ classes.product__title }>{ product.title.rendered }</h2>
+                        <p className={ classes.product__subtitle }>{ product.acf.subtitle } </p>
 
-                    <Media media={product.featured_media}/>
-                    <h2 className={ classes.product__title }>{ product.title.rendered }</h2>
-                    <p className={ classes.product__subtitle }>{ product.acf.subtitle } </p>
+                        <div dangerouslySetInnerHTML={ { __html: product.content.rendered } } />
+                    </div>
 
-                    <div dangerouslySetInnerHTML={ { __html: product.content.rendered } } />
+                    <div className={ cl.product__media }>
+                        <Media media={product.featured_media}/>
+                    </div>
                 </div>
 
                 <div className={ cl.metadata }>

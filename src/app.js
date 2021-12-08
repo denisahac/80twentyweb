@@ -24,6 +24,7 @@ function App() {
         } )
         .done( data => {
             setProducts( data );
+            setProduct( data[0] );
         } );
     }, [] );
 
