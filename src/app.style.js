@@ -105,7 +105,7 @@ const useStyles = createUseStyles( {
         flexWrap: 'wrap',
         padding: 20,
 
-        '& div': {
+        '& > div': {
            flex: '0 0 50%',
            width: '50%',
            padding: 20,
