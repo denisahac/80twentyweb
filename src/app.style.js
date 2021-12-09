@@ -67,12 +67,34 @@ const useStyles = createUseStyles( {
         zIndex: 999,
         padding: 20,
         overflow: 'auto',
-        backgroundColor: '#fff',
+
+        '&::before': {
+            content: '""',
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            bottom: 0,
+            right: 0,
+            background: '#0b0b0b',
+            opacity: 0.8,
+            color: 'transparent',
+        }
     },
 
+
     'product__details__close': {
-        'float': 'right',
+        position: 'fixed',
+        top: 20,
+        right: 20,
+        zIndex: 1000,
+        display: 'inline-block',
+        width: 40,
+        height: 40,
+        borderRadius: '50%',
+        boxShadow: '0 0 8px rgba(0,0,0,.6)',
+        background: '#fff',
         fontSize: 30,
+        textAlign: 'center',
         cursor: 'pointer'
     },
 
