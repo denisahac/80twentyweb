@@ -84,15 +84,17 @@ const useStyles = createUseStyles( {
 
     'product__details__close': {
         position: 'fixed',
-        top: 20,
+        top: 50,
         right: 20,
         zIndex: 1000,
         display: 'inline-block',
         width: 40,
         height: 40,
+        lineHeight: '40px',
         borderRadius: '50%',
         boxShadow: '0 0 8px rgba(0,0,0,.6)',
         background: '#fff',
+        color: '#000',
         fontSize: 30,
         textAlign: 'center',
         cursor: 'pointer'
